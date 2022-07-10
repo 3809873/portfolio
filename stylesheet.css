@@ -1,0 +1,387 @@
+@charset “UTF-8”;
+
+/* CSSのリセット */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  float: none;
+  position: static;
+}
+
+body{
+  font-family: 'Dosis', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", cursive;
+  background-color: #FAFAFA;
+  -webkit-text-size-adjust: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ここから */
+.top-wrapper {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  max-height: 800px;
+  position: relative;
+}
+
+.container {
+  width: 81.25vw;
+  margin: 0 auto;
+}
+
+.top-wrapper h1 {
+  font-size: 30px;
+  padding-top: 300px;
+  letter-spacing: 0.1em;
+  color: #333333;
+}
+
+.top-wrapper p {
+  padding-bottom: 300px;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #AAAAAA;
+}
+
+header {
+  background-color: #FAFAFA;
+  height: 88px;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.header-left {
+  float: left;
+  padding: 30px;
+  font-size: 12px;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-right li {
+  float: left;
+  padding: 30px;
+  font-size: 12px;
+}
+
+.btn {
+  color: #AAAAAA;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+.skill-wrapper {
+  background-color: #F0F0F0;
+  margin: 30px;
+}
+
+.skill-container {
+  width: 81.25vw;
+  margin: 0 auto;
+  padding: 150px 30px;
+  display: flex;
+  align-items: stretch;
+}
+
+.skill-item {
+  padding: 10px;
+  color: #333333;
+  margin: 10px;
+  background-color: white;
+  width: 20%;
+  border: solid 1px #333333;
+}
+
+.skill-item img {
+  width: 100%;
+}
+
+.skill-item h2 {
+  font-size: 18px;
+  padding: 8px;
+  text-align: center;
+}
+
+.skill-item p {
+  font-size: 11px;
+  padding: 15px;
+  letter-spacing: 0.05em;
+  line-height: 2;
+}
+
+.work-wrapper {
+  background-color: white;
+  margin: 30px;
+}
+
+.work-container {
+  width: 81.25vw;
+  margin: 0 auto;
+  padding: 150px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work-container::after { /*最後の列を左寄せにする */
+  display: inline-block;
+  content:"";
+  width: 150px;
+  margin: 30px;
+}
+
+.work-container a {
+  display: inline-block;
+  margin: 30px;
+}
+
+.work-item {
+  position: relative; /* 相対位置指定 */
+  width: 150px;
+  height: 100px;
+}
+
+.work-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.work-item .caption {
+  font-size: 60%;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 30px;
+  color: #333333;
+}
+
+.work-item .mask {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute; /* 絶対位置指定 */
+  opacity: 0; /* マスクを表示しない */
+  background-color: rgba(255, 255, 255, 0.8); /* マスクの色・半透明 */
+  -webkit-transition: all 0.2s ease;  /* マスクの動き */
+  transition: all 0.2s ease;
+}
+
+.work-item:hover .mask {
+  opacity: 1; /* マスクを表示する */
+}
+
+.about-wrapper {
+  padding-top: 150px;
+  margin: 50px;
+}
+
+.about-wrapper h3 {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+
+.about-wrapper p {
+  font-size: 13px;
+  color: #333333;
+  letter-spacing: 0.05em;
+  padding: 40px 0 70px 0;
+  line-height: 2;
+}
+
+address {
+  font-style: normal;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+
+.mail {
+  color: #333333;
+}
+
+address a:hover {
+  opacity: 0.5;
+}
+
+footer p {
+  padding: 170px 0 30px 0;
+  font-size: 12px;
+  text-align: center;
+  color: #AAAAAA;
+}
+
+
+/* _________________以下別ページ_________________ */
+
+.header-left {
+  float: left;
+}
+
+.header-left li {
+  float: left;
+  padding: 8px 8px 8px 0px;
+  font-size: 12px;
+}
+
+.workslist-top {
+  padding-top: 150px;
+}
+
+.workslist-top h1 {
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+.flowing {
+  margin: 0;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: flowing-anim 2s;
+}
+
+  @keyframes flowing-anim {
+    0% {
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+
+.workslist-top p {
+  letter-spacing: 0.05em;
+  line-height: 2;
+  color: #707070;
+}
+
+.fadein {
+  opacity: 0;
+  animation-name: fadeInAnime;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  }
+  
+  @keyframes fadeInAnime{
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+.workslist-top img {
+  width: 100%;
+  height: auto;
+  margin: 35px 0;
+}
+
+.fadein-2 {
+  opacity: 0;
+  animation-name: fadeInAnime;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-delay: 1.5s;
+  animation-direction: normal;
+  }
+  
+  @keyframes fadeInAnime{
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+.workslist-container {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.workslist-caption h3 {
+  border-bottom: solid 1px #333333;
+  line-height: 2;
+  margin-bottom: 20px;
+  font-weight: normal;
+  letter-spacing: 0.075em;
+  width: 50%; /* 線幅を半分にするために要素自体を半分の大きさにしている */
+}
+
+.workslist-caption p {
+  font-size: 13px;
+  letter-spacing: 0.075em;
+  line-height: 2;
+  margin-bottom: 60px;
+}
+
+.works-photolist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.works-photolist img {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.web-photolist-item-pc {
+  width: 60%;
+}
+
+.web-photolist-item-mobile {
+  width: 30%;
+}
+
+.ui-photolist-item {
+  width: 23%;
+}
+
+.ui02-photolist-item {
+  width: 30%;
+}
+
+.ui01-photolist-item {
+  width: 45%;
+}
+
+.kiitos {
+  color: #333333;
+}
+
+.kiitos:hover {
+  opacity: 0.5;
+}
+
+.photolist {
+  width: 100%;
+}
