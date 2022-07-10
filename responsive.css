@@ -1,0 +1,91 @@
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+  .header-left {
+    font-size: 5px;
+  }
+
+  .header-right li {
+    font-size: 5px;
+  }
+
+  .skill-container {
+    flex-direction: column;
+  }
+
+  .skill-item {
+    padding: 20px;
+    background-color: transparent;
+    width: auto;
+    text-align: center;
+    border: none;
+  }
+
+  .skill-item img {
+    width: 20%;
+  }
+
+  .skill-item h2 {
+    padding: 4px;
+  }
+
+  .skill-item p {
+    padding: 0;
+  }
+
+  .work-container {
+    padding: 150px 0 150px 0;
+  }
+
+  .caption {
+    display: none;
+  }
+
+  .workslist-top h1 {
+    font-size: 25px;
+  }
+}
+
+/* モバイル向けレイアウト */
+@media all and (max-width: 670px) {
+  header {
+    display: none;
+  }
+
+  .skill-container {
+    padding: 0;
+  }
+
+  .work-container {
+    padding: 0;
+    width: 100%;
+  }
+
+  .workslist-top {
+    padding-top: 40px;
+  }
+
+  .flowing {
+    animation: none;
+  }
+
+  .fadein {
+    opacity: 1;
+    animation: none;
+  }
+
+  .fadein-2 {
+    opacity: 1;
+    animation: none;
+  }
+
+  .workslist-container {
+    width: 90vw;
+  }
+}
+
+/* 以下 */
+@media all and (max-width: 480px) {
+  .work-container {
+    justify-content: center;
+  }
+}
