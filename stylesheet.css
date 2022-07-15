@@ -118,6 +118,7 @@ header {
   font-size: 18px;
   padding: 8px;
   text-align: center;
+  color: #505050;
 }
 
 .skill-item p {
@@ -195,6 +196,7 @@ header {
 .about-wrapper {
   padding-top: 150px;
   margin: 50px;
+  margin: 0 auto;
 }
 
 .about-wrapper h3 {
