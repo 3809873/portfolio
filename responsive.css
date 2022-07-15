@@ -97,6 +97,10 @@
     font-size: 3vw;
     font-weight: bold;
   }
+  
+  .workslist-caption p {
+    font-size: 3vw;
+  }
 }
 
 /* 以下 */
