@@ -92,6 +92,11 @@
   .workslist-container {
     width: 90vw;
   }
+
+  .workslist-caption h3 {
+    font-size: 3vw;
+    font-weight: bold;
+  }
 }
 
 /* 以下 */
