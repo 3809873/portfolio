@@ -42,7 +42,7 @@
     padding: 150px 0 150px 0;
   }
 
-  .caption {
+  .mask img {
     display: none;
   }
 
@@ -84,9 +84,8 @@
     animation: none;
   }
 
-  .fadein-2 {
-    opacity: 1;
-    animation: none;
+  .work-item {
+    width: 100%;
   }
 
   .workslist-container {
@@ -97,9 +96,13 @@
     font-size: 3vw;
     font-weight: bold;
   }
-  
-  .workslist-caption p {
-    font-size: 3vw;
+
+  .categorys {
+    font-size: 2vw;
+  }
+
+  .description {
+    font-size: 2.2vw;
   }
 }
 
